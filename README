@@ -1,0 +1,31 @@
+Instructions:
+           I choose the No.1 project and I choose selenium web driver to finish this automation test.
+	1. git clone the project from github url:        https://github.com/XiaoranAn/walmart.git
+	2. open a java Eclipse IDE and import the project
+	3. go to folder src/main/java, package com.walmart.automateTest,
+	4. right click on chromeTest.java and choose Run_As ==> JUnit_Test
+	5. this will start the automation test process
+	6. the test program will automatically opens a chrome browser and start an end-to-end user e-commerce transaction flow using Selenium web driver for www.walmart.com.
+	
+Clarification:
+	the test program first validates user login:
+		assertEquals("Welcome to your Walmart account!",welcomeHeader.getText());
+		above line of code that checks if the user has logged in successfully or not.
+	
+	test program then:
+	     performs searches on keywords: tv, socks, dvd, toys, and iPhone	     adds an item to cart and validate item added is present in the cart and is the only item in the cart.
+	     
+          assertEquals("1 item", quantityOneTV.getText());         ===> this line of code makes sure only 1 item is present in the shopping cart
+	      
+	     assertEquals(oneItemTitle, oneItemTitle1.getText());     ===> this line of code checks item added is present in the cart and has the same title as the one we selected before added into the shopping cart.
+		
+	when all the tests are done, the program will close the chrome browser.
+
+
+
+
+	
+	
+	
+	
+	
