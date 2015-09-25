@@ -1,5 +1,8 @@
 Instructions:
-           I choose the No.1 project and I choose selenium web driver to finish this automation test.
+        I choose the No.1 project and I chose selenium web driver to finish this automation test.
+        The reason I choose Selenium webdriver to do this automation test is that:
+           	it's open source and easy to use.
+           	I have previous working experience writing website automation test with Selenium webdriver. 
 	1. git clone the project from github url:        https://github.com/XiaoranAn/walmart.git
 	2. open a java Eclipse IDE and import the project
 	3. go to folder src/main/java, package com.walmart.automateTest,
