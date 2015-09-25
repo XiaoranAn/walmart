@@ -22,7 +22,11 @@ Clarification:
 	when all the tests are done, the program will close the chrome browser.
 
 
-
+Please note: please run this automation test in a stable, fast internet environment.
+	     Also for this automation test to run smoothly, I added multiple wait time for the page elements to load successfully.
+	     please wait patiently when the program is running.
+	     in the program, I remove an item from shopping cart after the item has been validated.
+	     
 
 	
 	
