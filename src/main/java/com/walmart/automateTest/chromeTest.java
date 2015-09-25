@@ -37,7 +37,7 @@ public class chromeTest {
 		//find sign in button
 		WebElement signInBtn = driver.findElement(By.xpath("//*[@id=\"top\"]/div[3]/div/div/div/div/div[4]/div/div[1]/div[1]/p/span[2]/a"));
 		signInBtn.click();
-		sleep(3000);
+		sleep(5000);
 		//enter username and password, then login.
 		WebElement userField = driver.findElement(By.xpath("//input[@id=\"login-username\"]"));
 		WebElement passField = driver.findElement(By.xpath("//input[@id=\"login-password\"]"));
@@ -51,7 +51,7 @@ public class chromeTest {
 		passField.sendKeys("1987827axr");
 		logInBtn.click();
 		
-		sleep(3000);
+		sleep(5000);
 		
 		WebElement welcomeHeader = driver.findElement(By.xpath("/html/body/div[1]/section/section[4]/div/div/div/div/div[2]/div/h1"));
 		assertEquals("Welcome to your Walmart account!",welcomeHeader.getText());
@@ -95,7 +95,7 @@ public class chromeTest {
 			
 			WebElement searchBtn   = driver.findElement(By.xpath("//*[@id=\"top\"]/div[3]/div/div/div/div/div[3]/form/div/div[3]/button"));
 			searchBtn.click();
-			sleep(3000);
+			sleep(5000);
 		
 			WebElement oneItem = null;
 			if (i == 2) {
@@ -107,15 +107,15 @@ public class chromeTest {
 			}
 			String oneItemTitle = oneItem.getText();
 			oneItem.click();
-			sleep(3000);
+			sleep(5000);
 		
 			WebElement addToCartOneItem = driver.findElement(By.xpath("//*[@id=\"WMItemAddToCartBtn\"]"));
 			addToCartOneItem.click();
-			sleep(3000);
+			sleep(5000);
 		
 			WebElement viewCartOneItem = driver.findElement(By.xpath("//*[@id=\"PACViewCartBtn\"]"));
 			viewCartOneItem.click();
-			sleep(3000);
+			sleep(5000);
 		
 			//test quantity, test title of the product.
 			WebElement quantityOneTV = driver.findElement(By.xpath("//*[@id=\"spa-layout\"]/div/div/div[1]/div/h3/span"));
@@ -124,7 +124,7 @@ public class chromeTest {
 			WebElement oneCartItem = driver.findElement(By.xpath("//*[@id=\"CartItemInfo\"]/span"));
 			//click one TVCartItem
 			oneCartItem.click();
-			sleep(3000);
+			sleep(5000);
 		
 			//validate item name
 			WebElement oneItemTitle1 = driver.findElement(By.xpath("/html/body/div[1]/section/section[4]/div/div[2]/div[1]/div[3]/div/h1/span"));
@@ -133,12 +133,12 @@ public class chromeTest {
 			//go back to shopping cart
 			WebElement oneTVShoppingCart = driver.findElement(By.xpath("//*[@id=\"top\"]/div[3]/div/div/div/div/div[4]/div/div[2]/div/a"));
 			oneTVShoppingCart.click();
-			sleep(3000);
+			sleep(5000);
 		
 			//remove one item from shopping cart
 			WebElement shoppingCartRemove = driver.findElement(By.xpath("//*[@id=\"CartRemItemBtn\"]"));
 			shoppingCartRemove.click();
-			sleep(3000);     
+			sleep(5000);     
 		
 			driver.get("https://www.walmart.com/account/");  
 			sleep(4000);   
